@@ -22,9 +22,11 @@ jobs:
 
       - name: Build the application
         run: npm run build
-      - run: npm run export
         env:  ${{ secrets.BACKEND_API }}
               ${{ secrets.BACKEND_PORT }}
+              
+      - run: npm run export
+
     
 
       - name: Deploy to AWS S3
