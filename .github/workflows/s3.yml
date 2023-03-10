@@ -35,7 +35,7 @@ jobs:
       - name: Terraform Init
         uses: hashicorp/terraform-github-actions/init@v0.4.0
         env:
-          TF_ACTION_WORKING_DIR: './terraform.tf'
+          TF_ACTION_WORKING_DIR: '.'
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
@@ -45,7 +45,7 @@ jobs:
       - name: Terraform Apply
         uses: hashicorp/terraform-github-actions/apply@v0.4.0
         env:
-          TF_ACTION_WORKING_DIR: './terraform.tf'
+          TF_ACTION_WORKING_DIR: '.'
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
