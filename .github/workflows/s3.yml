@@ -22,8 +22,8 @@ jobs:
 
       - name: Build the application
         run: npm run build
-        env:  ${{ secrets.BACKEND_API }}
-              ${{ secrets.BACKEND_PORT }}
+        env: ${{ secrets.BACKEND_API }}
+             ${{ secrets.BACKEND_PORT }}
               
       - run: npm run export
 
