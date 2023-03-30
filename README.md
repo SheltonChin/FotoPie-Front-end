@@ -1,4 +1,4 @@
-### FotoPie
+### Foto2Pie
 
 #### Project Introduction
 
