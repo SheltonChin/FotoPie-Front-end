@@ -5,14 +5,14 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "remote-state-shelton"
-    key    = "terraform-shelton-1"
+    bucket = "myremote-bucket-terraform-jenkins"
+    key    = "jenkins-gohusky"
     region = "ap-southeast-2"
   }
 }
 
 resource "aws_s3_bucket" "s3Bucket" {
-  bucket = "terraform-shelton-1"
+  bucket = "jenkins-gohusky"
   acl    = "public-read"
 
   policy = <<EOF
@@ -25,7 +25,7 @@ resource "aws_s3_bucket" "s3Bucket" {
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::terraform-shelton-1/*",
+      "Resource": "arn:aws:s3:::jenkins-gohusky/*",
       "Principal": "*"
     }
   ]
