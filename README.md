@@ -36,7 +36,7 @@ It includes `@mui/material` and its peer dependencies, including `emotion`, the 
 The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/nextjs-with-typescript) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
 More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
 
-## What's next?
+## What's nedxt?
 
 <!-- #default-branch-switch -->
 
